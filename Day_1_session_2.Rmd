@@ -67,7 +67,7 @@ time_vec
 Now let's est the pop over that range of times, given capacity - 2580, init pop = 230, rate - 0.32
 
 ```{r}
-chipmunk_pop <- pop_logistic(capacity = 2580, init_pop = 230, rate = 0.32, time_yr = time_vec)
+chipmunk_pop <- pop_logistic(capacity = 2580, init_pop = 110, rate = 0.32, time_yr = time_vec)
 ```
 
 ### Create a data frame and plot a chipmunk pop overt time
