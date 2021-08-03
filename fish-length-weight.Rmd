@@ -1,0 +1,41 @@
+---
+title: "EDS-212-Day-1"
+author: "Peter Menzies"
+date: "8/2/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+```
+
+# This is my header
+
+*this is italicized*
+
+**this is bold**
+
+## this is a subheader
+
+here is ^super script^ and ~subscript~
+
+#BarriCODEa
+
+```{r}
+fish_weight <- function(a, L, b) {a*(L^b)}
+```
+
+Fish weight sequence
+
+```{r}
+fish_length <- seq(from = 0, to = 200, by = 1)
+
+barracuda_weight <- fish_weight(0.0181, fish_length, 3.27)
+
+barracude_frame <- data.frame(fish_length, barracuda_weight)
+
+ggplot(data = barracude_frame, aes(x = fish_length, y = barracuda_weight)) + geom_point()
+```
+
